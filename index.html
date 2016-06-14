@@ -81,8 +81,10 @@ if (typeof GSFN !== "undefined") { GSFN.loadWidget(8226,{"containerId":"getsat-w
 </script>
   
   <script>
-    alert($('#getsat-widget-8224').text());
-    $('#getsat-widget-8224 a').text('Comment');
+    $(window).bind("load",function() {
+      alert($('#getsat-widget-8224 a').text());
+      $('#getsat-widget-8224 a').text('Comment');
+    });
   </script>
   </body>
 </html>
